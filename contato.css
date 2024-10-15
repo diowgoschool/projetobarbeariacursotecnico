@@ -1,49 +1,46 @@
-* {
-    transition: .05s;
-}
-
-header {
-    background: #bbb;
+header{
+    background-color: #BBBBBB;
     padding: 20px 0;
 }
 
-li {
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-.caixa {
+.caixa{
     width: 940px;
     position: relative;
-    margin: 0 auto;
+    margin: auto;
 }
 
-nav {
+nav{
     position: absolute;
     top: 110px;
     right: 0px;
 }
 
-nav a {
-    text-transform: uppercase;
-    color: #000;
-    font-weight: bold;
-    font-size: 22 px;
-    text-decoration:none;
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-nav a:hover {
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
     color: #C78C19;
     text-decoration: underline;
+    
 }
 
-.produtos {
+.produtos{
     width: 940px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.produtos li {
+.produtos li{
     display: inline-block;
     text-align: center;
     width: 30%;
@@ -51,73 +48,78 @@ nav a:hover {
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box;
-    border-width: 3px;
-    border-style: dotted;
-    border-color: #000;
-    border-radius: 10px 20px 30px 40px;
-}
-
-.produtos li:hover {
-    border-color: #C78C19;
-    text-decoration: underline;
+    border-color: #000000;
+    border-width: 5px;
     border-style: solid;
-    cursor: pointer;
+    border-radius: 20px;
 }
 
-.produtos li:active {
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:active{
     border-color: #088C19;
 }
 
-.produtos li:hover h2 {
+.produtos li:hover h2{
     font-size: 40px;
 }
 
-.produtos h2 {
+.produtos h2{
     font-size: 30px;
     font-weight: bold;
 }
 
-.produto-descricao {
+.produto-descricao{
     font-size: 18px;
 }
 
-footer {
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
     text-align: center;
     background: url("bg.jpg");
-    padding: 40px 0px !important;
+    padding: 40px 0;
 }
 
-.copyright {
-    color: #fff;
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
 
-main {
+main{
     width: 940px;
     margin: 0 auto;
 }
 
-form {
+form{
     margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
 }
 
-.input-padrao {
-    display: inline-block;
+.input-padrao{
+    display: block;
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
 }
 
-.checkbox {
+.checkbox{
     margin: 20px 0;
 }
 
-.enviar {
+.enviar{
     width: 40%;
     padding: 15px 0;
     background: orange;
@@ -126,10 +128,25 @@ form label, form p {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 1s;
+    transition: 2s background;
 }
 
-.enviar:hover {
+.enviar:hover{
     background: darkorange;
-    transform: rotate(100000rad) scale(1.2);
+    transform: scale(1.2);
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
